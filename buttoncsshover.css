@@ -24,7 +24,6 @@ h1 {
   position: absolute;
   content: "";
 }
-
 .btn-holder {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +42,7 @@ h1 {
   margin: 0px 25px 15px;
   min-width: 150px;
 }
+
 .btn span {
   position: relative;
   display: inline-block;
@@ -61,32 +61,25 @@ h1 {
   background-color: rgb(28, 31, 30);
   transition: 0.3s ease-out;
 }
-.btn-1 span{
-  color: rgb(255, 255, 255);
+.btn-1 span {
+  color: rgb(28, 31, 30);
   border: 1px solid rgb(28, 31, 30);
   transition: 0.2s 0.1s;
 }
-btn-1 span:hover{
+.btn-1 span:hover {
   color: rgb(28, 31, 30);
   transition: 0.2s 0.1s;
 }
+
 /* 1.hover-filled-slide-down */
 .btn.hover-filled-slide-down::before {
   bottom: 0; left: 0; right: 0;
   height: 100%; width: 100%;
 }
-.btn.hover-filled-slide-down:hover::before{
+.btn.hover-filled-slide-down:hover::before {
   height: 0%;
 }
-/* 2.hover-filled-slide-up*/
-.btn.hover-filled-slide-up::before{
-  top: 0;left: 0;right: 0;
-  height: 100%;width: 100%;
-}
-.btn.hover-filled-slide-up:hover::before{
-  height: 0%;
-}
-/* 2.hover-filled-slide-up*/
+/* 2.hover-filled-slide-up */
 .btn.hover-filled-slide-up::before {
   top: 0; left: 0; right: 0;
   height: 100%; width: 100%;
@@ -102,56 +95,21 @@ btn-1 span:hover{
 .btn.hover-filled-slide-left:hover::before {
   width: 0%;
 }
+/* 4. hover-filled-slide-left */
+.btn.hover-filled-slide-right::before {
+  top: 0; bottom: 0; right: 0;
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
 
-
-/*  5. hover-filled-opacity */
-.btn.btn.hover-filled-opacity::before {
-  top: 0; bottom: 0; right: 100%;
+/* 5. hover-filled-opacity */
+.btn.hover-filled-opacity::before {
+  top: 0; bottom: 0; right: 0;
   height: 100%; width: 100%;
   opacity: 1;
 }
-.btn.btn.hover-filled-opacity:hover::before {
+.btn.hover-filled-opacity:hover::before {
   opacity: 0;
 }
-/* 
-/*--- btn-2 ---*/
-.btn-2::before {
-  background-color: rgb( 28, 31, 30);
-  transition: 0.2s;
-}
-.btn-2 span {
-  color: rgb( 28, 31, 30);
-  transition: 0.2s 0.1s;
-}
-.btm-2 span:hover {
-  color: rgb( 255, 255, 255);
-  transition: 0.2s 0.1s;
-}
-
-/* 6. hover-slide-down */
-.btn.hover-filled-slide-down::before {
-  top: 0; left: 0; right: 0;
-  height: 0%; width: 100%;
-}
-.btn.hover-filled-slide-down:hover::before {
-  height: 100%;
-}
-
-/* 7 . hover-slide-up */
-.btn.hover-filled-slide-up::before {
-  bottom: 0; left: 0; right: 0;
-  height: 0%; width: 100%;
-}
-.btn.hover-slide-up {
-  height: 100%;
-}
-
-/* 8. hover-slide-left */
-.btn.hover-slide-left::before {
-  top: 0; bottom: 0; right: 0;
-  height: 100%; width: 0%;
-}
-.btn.hover-slide-left:hover::before {
-  width: 100%;
-}
-/* 9. hover */
